@@ -1,0 +1,161 @@
+[
+    {
+        "type": "header",
+        "version": "4.7.4",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "unit_3c"
+    },
+
+    {
+        "type": "table",
+        "name": "kelas",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_kelas": "1",
+                "judul": "Certified Secure Computer User (CSCU)",
+                "lokasi": "Bandung",
+                "id_kategori": "1",
+                "durasi": "4",
+                "harga": "2500000",
+                "gambar": "assets/images/security-training.png"
+            },
+            {
+                "id_kelas": "2",
+                "judul": "Certified Ethical Hacker (CEH)",
+                "lokasi": "Bandung",
+                "id_kategori": "1",
+                "durasi": "5",
+                "harga": "14500000",
+                "gambar": "assets/images/security-training2.png"
+            },
+            {
+                "id_kelas": "3",
+                "judul": "Mikrotik Certified Network Associate (MTCNA)",
+                "lokasi": "Bandung",
+                "id_kategori": "2",
+                "durasi": "3",
+                "harga": "2500000",
+                "gambar": "assets/images/network-and-cloud-training.png"
+            },
+            {
+                "id_kelas": "4",
+                "judul": "Developing Solutions for Microsoft Azure (AZ-204)",
+                "lokasi": "Bandung",
+                "id_kategori": "2",
+                "durasi": "5",
+                "harga": "18000000",
+                "gambar": "assets/images/network-and-cloud-training2.png"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "kategori",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_kategori": "1",
+                "kategori": "Security Training"
+            },
+            {
+                "id_kategori": "2",
+                "kategori": "Network and Cloud Training"
+            }
+        ]
+    },
+
+    {
+        "type": "table",
+        "name": "pengguna",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_pengguna": "1",
+                "nama": "asyraf",
+                "email": "asyraf@gmail.com",
+                "password": "asyraf123",
+                "id_user": "1"
+            },
+            {
+                "id_pengguna": "2",
+                "nama": "andi",
+                "email": "andi@gmail.com",
+                "password": "andi123",
+                "id_user": "2"
+            },
+            {
+                "id_pengguna": "13",
+                "nama": "budi",
+                "email": "budi@gmail.com",
+                "password": "budi123",
+                "id_user": "1"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "user",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_user": "1",
+                "user": "Peserta"
+            },
+            {
+                "id_user": "2",
+                "user": "Mentor"
+            }
+        ]
+    },
+
+    {
+        "type": "table",
+        "name": "transaksi",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_transaksi": "1",
+                "id_pengguna": "1",
+                "id_kelas": "1",
+                "id_status": "1"
+            },
+            {
+                "id_transaksi": "2",
+                "id_pengguna": "1",
+                "id_kelas": "3",
+                "id_status": "2"
+            },
+            {
+                "id_transaksi": "3",
+                "id_pengguna": "13",
+                "id_kelas": "4",
+                "id_status": "1"
+            },
+            {
+                "id_transaksi": "4",
+                "id_pengguna": "1",
+                "id_kelas": "2",
+                "id_status": "1"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "status",
+        "database": "unit_3c",
+        "data": [
+            {
+                "id_status": "1",
+                "status": "dipelajari"
+            },
+            {
+                "id_status": "2",
+                "status": "selesai"
+            }
+        ]
+    }
+]
